@@ -1,0 +1,35 @@
+.AsideIllustration {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  .AsideIllustration {
+    background: #835afd;
+    color: white;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    padding: 15vh 10vw;
+  
+    img {
+      max-width: 20rem;
+    }
+  
+    strong {
+      font: 700 2.25rem 'Poppins', sans-serif;
+      line-height: 2.625rem;
+      margin-top: 1rem;
+      max-width: 12ch;
+    }
+  
+    p {
+      max-width: 30ch;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-top: 1rem;
+      color: #f8f8f8;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.Question {
+  background: #fefefe;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.04);
+  padding: 1.5rem;
+  transition: all 250ms linear;
+
+  &:first-child {
+    margin-top: 2rem;
+  }
+
+  & + .Question {
+    margin-top: 0.5rem;
+  }
+
+  .Buttons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  p {
+    color: #29292e;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+
+    button {
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    button[data-type="delete"] svg path {
+      stroke: #c21111;
+    }
+
+    button[data-type="answered"] svg {
+      path, circle {
+        stroke: #1ac211;
+      }
+    }
+  }
+}
+
+
+.Highlighted {
+  background: #f4f0ff;
+  box-shadow: 
+    0 0.125rem 0.75rem rgba(0, 0, 0, 0.04),
+    0 0 0 1px #835afd;
+  
+  footer span {
+    color: #29292e;
+  }
+
+  button[data-type="highlight"] svg path {
+    stroke: #835afd;
+  }
+}
+
+.Answered {
+  background: #dbdcdd;
+  filter: opacity(0.5);
+}

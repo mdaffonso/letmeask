@@ -1,0 +1,35 @@
+#pg-unauthorized {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+
+  > * {
+    margin: 0 15vw;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  
+  p {
+    max-width: 35ch;
+  }
+
+  .error {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    font-weight: 300;
+    color: #853afd;
+    max-width: 25ch;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

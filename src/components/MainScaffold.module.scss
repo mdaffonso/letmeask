@@ -1,0 +1,18 @@
+.MainScaffold {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+
+  aside {
+    flex: 7;
+  }
+
+  main {
+    flex: 9;
+    padding: 0 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
