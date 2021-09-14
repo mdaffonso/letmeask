@@ -1,0 +1,76 @@
+.Question {
+  background: #fefefe;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.04);
+  padding: 1.5rem;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+
+.Question:first-child {
+  margin-top: 2rem;
+}
+
+.Question + .Question {
+  margin-top: 0.5rem;
+}
+
+.Question .Buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.Question p {
+  color: #29292e;
+}
+
+.Question footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.5rem;
+}
+
+.Question footer button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.Question footer button[data-type="delete"] svg path {
+  stroke: #c21111;
+}
+
+.Question footer button[data-type="answered"] svg path, .Question footer button[data-type="answered"] svg circle {
+  stroke: #1ac211;
+}
+
+.Highlighted {
+  background: #f4f0ff;
+  -webkit-box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.04), 0 0 0 1px #835afd;
+          box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.04), 0 0 0 1px #835afd;
+}
+
+.Highlighted footer span {
+  color: #29292e;
+}
+
+.Highlighted button[data-type="highlight"] svg path {
+  stroke: #835afd;
+}
+
+.Answered {
+  background: #dbdcdd;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+/*# sourceMappingURL=Question.module.css.map */

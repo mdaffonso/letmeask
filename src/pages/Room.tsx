@@ -37,9 +37,14 @@ export const Room = () => {
         history.push("/bad?r=closed")
         return
       }
+
+      if(roomRef.val().authorId === user?.id) {
+        history.push(`/admin/rooms/${roomId}`)
+        return
+      }
     }
     checkRef()
-  }, [roomId, history])
+  }, [roomId, history, user])
 
   const handleSendQuestion = async (e: FormEvent) => {
     e.preventDefault()

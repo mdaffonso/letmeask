@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,OAAO;EACpB,MAAM,EAAE,KAAK;CAcd;;AAjBD,AAKE,aALW,CAKX,KAAK,CAAC;EACJ,IAAI,EAAE,CAAC;CACR;;AAPH,AASE,aATW,CASX,IAAI,CAAC;EACH,IAAI,EAAE,CAAC;EACP,OAAO,EAAE,MAAM;EAEf,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;CACxB",
+    "sources": [
+        "MainScaffold.module.scss"
+    ],
+    "names": [],
+    "file": "MainScaffold.module.css"
+}

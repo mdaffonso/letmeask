@@ -1,0 +1,38 @@
+.AsideIllustration {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  .AsideIllustration {
+    background: #835afd;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 15vh 10vw;
+  }
+  .AsideIllustration img {
+    max-width: 20rem;
+  }
+  .AsideIllustration strong {
+    font: 700 2.25rem 'Poppins', sans-serif;
+    line-height: 2.625rem;
+    margin-top: 1rem;
+    max-width: 12ch;
+  }
+  .AsideIllustration p {
+    max-width: 30ch;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+    color: #f8f8f8;
+  }
+}
+/*# sourceMappingURL=AsideIllustration.module.css.map */

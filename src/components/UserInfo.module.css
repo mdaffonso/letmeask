@@ -1,0 +1,26 @@
+.UserInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.UserInfo img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.UserInfo span {
+  margin-left: 0.5rem;
+  color: #848488;
+  font-size: 0.825rem;
+}
+
+.Strong span {
+  color: #29292e;
+  font-weight: 500;
+}
+/*# sourceMappingURL=UserInfo.module.css.map */

@@ -18,6 +18,14 @@ export const NewRoom = () => {
   const history = useHistory()
   const [newRoom, setNewRoom] = useState<string>()
 
+  const generateCode = () => {
+    let code = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5)
+    if(code.length < 5) {
+      code = generateCode()
+    }
+    return code
+  }
+
   const handleCreateRoom = async (e: FormEvent) => {
     e.preventDefault()
 
@@ -29,6 +37,7 @@ export const NewRoom = () => {
     const firebaseRoom = await roomRef.push({
       title: newRoom,
       authorId: user?.id,
+      code: generateCode()
     })
 
     history.push(`/admin/rooms/${firebaseRoom.key}`)

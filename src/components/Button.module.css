@@ -1,0 +1,44 @@
+.Button {
+  height: 3.125rem;
+  padding: 0.25rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  background: #835afd;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border: 0;
+  -webkit-transition: -webkit-filter 200ms linear;
+  transition: -webkit-filter 200ms linear;
+  transition: filter 200ms linear;
+  transition: filter 200ms linear, -webkit-filter 200ms linear;
+}
+
+.Button img {
+  margin-right: 0.5rem;
+}
+
+.Button:not(:disabled):hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+.Button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.Hollow {
+  background: #fff;
+  border: 1px solid #835afd;
+  color: #835afd;
+}
+/*# sourceMappingURL=Button.module.css.map */

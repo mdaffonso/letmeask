@@ -1,0 +1,194 @@
+#page-room header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+#page-room header .content {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'logo delete' 'code code';
+  max-width: 70rem;
+  margin: 0 auto;
+  gap: 1.5rem;
+}
+
+#page-room header .content img[data-type="logo"] {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  max-height: 2.8125rem;
+}
+
+#page-room header .content > button {
+  height: 2.5rem;
+}
+
+#page-room header .content > button[data-type="delete"] {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: delete;
+}
+
+#page-room header .content > button[data-type="code"] {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: code;
+}
+
+#page-room main {
+  padding: 1.5rem;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+#page-room main .room-title {
+  margin: 2rem 0 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page-room main .room-title h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  color: #29292e;
+}
+
+#page-room main .room-title span {
+  margin-left: 1rem;
+  background: #e559f9;
+  border-radius: 100rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+#page-room main .empty {
+  color: #737380;
+  background: #fefefe;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.04);
+  padding: 1.5rem;
+}
+
+#page-room main form textarea {
+  width: 100%;
+  border: 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #fefefe;
+  -webkit-box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.04);
+  resize: vertical;
+  min-height: 8.125rem;
+}
+
+#page-room main .form-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+#page-room main .form-footer span {
+  font-size: 0.825rem;
+  color: #737380;
+  font-weight: 500;
+}
+
+#page-room main .form-footer span button {
+  background: transparent;
+  border: 0;
+  color: #835afd;
+  text-decoration: underline;
+  font-size: 0.825rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#page-room .likes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#page-room .likes p {
+  margin: 0.3rem 0.5rem 0;
+}
+
+#page-room .like-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #737380;
+}
+
+#page-room .like-button span {
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-right: 0.75em;
+}
+
+#page-room .like-button.liked {
+  color: #835afd;
+}
+
+#page-room .like-button.liked span {
+  color: #835afd;
+}
+
+#page-room .like-button.liked svg path {
+  stroke: #835afd;
+}
+
+#page-room button[data-type="highlight"] {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+#page-room button[data-type="highlight"].title {
+  margin-left: 0.75rem;
+}
+
+#page-room button[data-type="highlight"].active svg path {
+  stroke: #835afd;
+}
+
+@media (min-width: 650px) {
+  #page-room header .content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: min-content 1fr max-content max-content;
+        grid-template-columns: -webkit-min-content 1fr -webkit-max-content -webkit-max-content;
+        grid-template-columns: min-content 1fr max-content max-content;
+        grid-template-areas: 'logo . code delete';
+  }
+  #page-room header .content button {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  main span[data-singular="yes"]::after {
+    content: ' pergunta';
+  }
+  main span[data-singular="no"]::after {
+    content: ' perguntas';
+  }
+}
+/*# sourceMappingURL=rooms.css.map */

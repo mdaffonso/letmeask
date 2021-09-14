@@ -11,7 +11,6 @@ import { Room } from "./pages/Room";
 import { Unauthorized } from "./pages/Unauthorized";
 
 function App() {
-
   return (
     <BrowserRouter>
       <Toaster
